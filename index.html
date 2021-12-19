@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <title>pilips bio</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+    <div id="d" class="container">
+    	<button type="button"  id="b">o</button>
+        <div class="title">
+            <img id="c"src="https://i.ibb.co/w6zQtt8/IMG-20211126-070942.jpg">
+            <div class="info">
+                <h1>@PILIPUS</h1>
+                <h4></h4>
+            </div>
+                <h5></h5>
+        </div>
+        <div class="content">
+            <ul>
+                <li><a href="https://youtube.com/channel/UCHduCsP259BU7Pc4nLuI9GA"><i class="bi bi-youtube"></i>YOUTUBE</a></li>
+                <li><a href="https://vt.tiktok.com/ZSeSsFvHP/"><i class="bi bi-tiktok"></i>TIKTOK</a></li>
+                <li><a href="https://www.instagram.com/profesorp.g"><i class="bi bi-instagram"></i>INSTAGRAM</a></li>
+                <li><a href="#"><i class="bi bi-controller"></i>MLBB</a></li>
+            </ul>
+        </div>
+    </div>
+
+		
+		<script>
+			const b = document.getElementById("b")
+			const container = document.getElementById("d")
+			b.onclick = function() {
+            container.classList.toggle('hitam-muda')
+}			
+			
+		</script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/TextPlugin.min.js"></script> 
+        <script>
+            gsap.registerPlugin(TextPlugin);
+            gsap.to('h4',{ duration: 2, delay:1.5, text:'GAMER | STUDENT'})  
+            gsap.to('h5',{ duration: 5, delay:3, text:'TERKENAL DENGAN:kegoblokan  kegabutan, ketololan'})  
+            gsap.from('#c',{duration:1, rotateY:360,opacity: 0 })
+            gsap.from('h1',{duration:1,x: -50,opacity:0,delay:0.5, ease: 'back'})
+           
+          </script>
+	</body>
